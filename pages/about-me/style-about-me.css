@@ -1,0 +1,44 @@
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 4px 2px 4px #ced4da;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.section-about-me {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    border: none;
+}
+
+.section-parrafo {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    text-align: justify;
+    text-indent: 40px;
+    /* font-size: 1em; 16px / 16px = 1em */
+}
+
+.elementos {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+/* Pseudoelementos */
+.elementos h2::selection {
+ background-color: yellow;
+}
+
+div.elementos{
+    border: 2px solid black;
+    background-color: #f1faee;
+    text-align: center;
+}
+
+p.subclase{
+    font-weight: bold;
+}

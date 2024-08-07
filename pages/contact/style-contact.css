@@ -1,0 +1,91 @@
+main{
+    border: 2px solid #457b9d97;
+}
+
+table {
+    width: 50%;
+    margin-left: 20px;
+}
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+td {
+    text-align: center;
+}
+h3 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+caption {
+    color: #e63946;
+    font-size: 45px;
+    line-height: 70px;
+}
+
+th {
+    color:#f1faee;
+    background-color: #1d3557;
+}
+/*Renglones pares*/
+tr:nth-child(even){
+    background-color: #f1faee;
+}
+/* Renglones impares */
+tr:nth-child(odd){
+    background-color: #a8dadc;
+}
+
+.listas {
+    margin: 20px;
+}
+
+.listas h4 {
+    margin: 20px;
+}
+
+ul {
+    list-style-type: square;  
+}
+
+.lista{
+    background-color: #457b9d;
+    list-style-type: none; 
+    overflow: hidden;
+    width: 62%;
+    margin: auto;
+}
+
+.lista li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 15px;
+}
+
+li a:hover{
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+/* listas ordenada */
+ol{
+    list-style: none;
+    counter-reset: contador;
+}
+ol li {
+    counter-increment: contador;
+}
+
+ol li::before {
+    content: 'Curso ' counter(contador) ') ';
+    color: #1d3557;
+}
+
+ol li::after {
+    content: ".";
+}
